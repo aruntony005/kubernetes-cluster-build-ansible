@@ -7,7 +7,7 @@
      shell: ansible-playbook master.yml > /root/log
 
    - name: Worker installation
-     shell: ansible-playbook worker.yml > /root/log
+     shell: ansible-playbook worker.yml >> /root/log
 
    - name: CNI installation
-     shell: ansible-playbook cni.yml > /root/log
+     shell: ansible-playbook cni.yml >> /root/log
