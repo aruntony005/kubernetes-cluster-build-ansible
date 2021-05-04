@@ -1,0 +1,7 @@
+- name: kubernetes cluster build
+  hosts: worker
+  gather_facts: yes
+  become: yes
+
+  roles:
+  - worker_installation

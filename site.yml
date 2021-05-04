@@ -1,0 +1,13 @@
+- name: kubernetes cluster build
+  hosts: localhost
+  gather_facts: yes
+  become: yes
+  tasks:
+#   - name: Master installation
+#     shell: ansible-playbook master.yml > /root/log
+
+   - name: Worker installation
+     shell: ansible-playbook worker.yml > /root/log
+
+   - name: CNI installation
+     shell: ansible-playbook cni.yml > /root/log
