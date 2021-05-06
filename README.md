@@ -5,7 +5,7 @@ Execute the below commands before using the scripts in the repo.
 ```
 yum install epel-release -y
 yum install git unzip wget ansible -y
-git clone -b develop https://github.com/aruntony005/kubernetes-cluster-build-ansible.git
+git clone https://github.com/aruntony005/kubernetes-cluster-build-ansible.git
 mkdir /root/.ssh
 gpg --quiet --batch --yes --decrypt --passphrase="aruntony" --output /root/.ssh/authorized_keys /root/kubernetes-cluster-build-ansible/public_key.gpg
 gpg --quiet --batch --yes --decrypt --passphrase="aruntony" --output /root/.ssh/id_rsa /root/kubernetes-cluster-build-ansible/private_key.gpg
