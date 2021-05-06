@@ -3,6 +3,7 @@
   - name: sample
     set_fact:
      host: "{{ groups.worker }}"
+    ignore_errors: yes
 
   - name: Edit sshd_config (remove the lines with certain keywords)
     lineinfile:
